@@ -3,14 +3,14 @@
   "bindings": [
     {
       "authLevel": "function",
+      "name": "req",
       "type": "httpTrigger",
-      "direction": "in",
-      "name": "req"
+      "direction": "in"
     },
     {
+      "name": "$return",
       "type": "http",
-      "direction": "out",
-      "name": "res"
+      "direction": "out"
     }
   ]
 }
