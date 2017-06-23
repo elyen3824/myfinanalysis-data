@@ -37,7 +37,7 @@ private static string GetValueFromQuery(HttpRequestMessage req, string key)
 private static HttpResponseMessage GetResponse(HttpRequestMessage req, string symbol, string[] symbols, string start, string end)
 {
     if(symbol == null && symbols == null)
-        return req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
+        return req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body");
     
     dynamic urls = GetUrls(symbol, symbols, start, end);
 
