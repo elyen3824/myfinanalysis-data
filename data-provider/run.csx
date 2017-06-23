@@ -41,7 +41,7 @@ private static HttpResponseMessage GetResponse(HttpRequestMessage req, string sy
     
     dynamic urls = GetUrls(symbol, symbols, start, end);
 
-    return req.CreateResponse(HttpStatusCode.Ok, urls);
+    return req.CreateResponse(HttpStatusCode.OK, urls);
 }
 
 private static dynamic GetUrls(string symbol, string[] symbols, string start, string end)
