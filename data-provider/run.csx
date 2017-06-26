@@ -1,17 +1,8 @@
-#r "System.Web.Http"
-
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
     log.Info("C# HTTP trigger function processed a request.");
-
-    // parse query parameter
-    string name = req.GetQueryNameValuePairs()
-        .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0)
-        .Value;
 
     string symbol = GetValueFromQuery(req, "symbol");
 
