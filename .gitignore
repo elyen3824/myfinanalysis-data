@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+/.vs
+/data-provider/bin/Debug/net461
+/data-provider/obj
